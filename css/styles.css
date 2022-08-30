@@ -20,7 +20,7 @@
     --card-padding: 1rem;
 
     --sticky-top-left: 5.4rem;
-    --sticky-top-right: 18rem;
+    --sticky-top-right: 5.4rem;
 }
 
 
@@ -128,8 +128,9 @@ nav .create {
 
 /* MAIN */
 
-main {
-    position: relative;
+main .middle {
+    /* position: relative; */
+    padding-top: var(--sticky-top-left);
     top: 5.4rem;
 }
 
@@ -273,10 +274,6 @@ main .container .left .profile {
 }
 
 /* MIDDLE */
-.middle {
-    overflow-y: auto;
-}
-
 .middle .stories {
     display: flex;
     justify-content: space-between;
@@ -444,4 +441,77 @@ main .container .right {
     height: max-content;
     position: sticky;
     top: var(--sticky-top-right);
+    bottom: 0;
+}
+
+.right .messages {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.right .messages .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .messages i {
+    font-size: 1.4rem;
+}
+
+.right .messages .search-bar {
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+    margin-bottom: 1rem;
+}
+
+.right .messages .search-bar input[type="search"] {
+    width: 100%;
+    outline: 0;
+    background: transparent;
+}
+
+.right .messages .category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .messages .category h6 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid var(--color-light);
+    padding-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.right .messages .category .active {
+    border-color: var(--color-dark);
+}
+
+.right .messages .message {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: start;
+}
+
+.right .messages .message:last-child {
+    margin: 0;
+}
+
+.right .messages .message p {
+    font-size: .8rem;
+}
+
+.right .messages .message .profile-photo .active {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
 }
