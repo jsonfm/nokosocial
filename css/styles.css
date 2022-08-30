@@ -251,3 +251,85 @@ main .container .left .profile {
     box-shadow: 0 0 2rem hsl(var(--color-primary));
     z-index: 8;
 }
+
+.left .notifications-popup::before {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    background: var(--color-white);
+    position: absolute;
+    left: -0.3rem;
+    top: 1.2rem;
+    transform: rotate(45deg);
+}
+
+.left .notifications-popup > div {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* MIDDLE */
+.middle .stories {
+    display: flex;
+    justify-content: space-between;
+    height: 12rem;
+    gap: .5rem;
+}
+
+.middle .stories .story {
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: .75rem;
+    width: 100%;
+    background: gray; 
+}
+
+.middle .stories .story:nth-child(1) {
+    background: url('../images/story-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.middle .stories .story:nth-child(2) {
+    background: url('../images/story-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.middle .stories .story:nth-child(3) {
+    background: url('../images/story-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.middle .stories .story:nth-child(4) {
+    background: url('../images/story-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.middle .stories .story:nth-child(5) {
+    background: url('../images/story-5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.middle .stories .story:nth-child(6) {
+    background: url('../images/story-6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
