@@ -43,7 +43,7 @@ html, body {
 
 /* GLOBAL */
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -450,6 +450,10 @@ main .container .right {
     padding: var(--card-padding);
 }
 
+.right .messages .message-requests {
+    color: var(--color-primary);
+}
+
 .right .messages .heading {
     display: flex;
     align-items: center;
@@ -509,9 +513,54 @@ main .container .right {
     font-size: .8rem;
 }
 
+.profile-photo {
+    position: relative;
+    z-index: 8;
+    overflow: visible;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+}
+
 .right .messages .message .profile-photo .active {
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
     border: 3px solid var(--color-white);
+    background: var(--color-success);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.right .friend-requests {
+    margin-top: 1rem;
+}
+
+.right .friend-requests h4 {
+    color: var(--color-gray);
+    margin-bottom: 1rem 0;
+}
+
+.right .request {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.right .request .info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.right .request .action {
+    display: flex;
+    gap: 1rem;
 }
